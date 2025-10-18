@@ -8,13 +8,12 @@
  */
 
 import { NextStudio } from 'next-sanity/studio'
-// Import a minimal, client-safe config to avoid bundling server-only code
-import clientConfig from '../../../../src/sanity/clientConfig'
+import config from '../../../../sanity.config'
 
 export const dynamic = 'force-static'
 
 export { metadata, viewport } from 'next-sanity/studio'
 
 export default function StudioPage() {
-  return <NextStudio config={clientConfig} />
+  return <NextStudio config={config} />
 }

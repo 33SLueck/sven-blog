@@ -1,4 +1,5 @@
-// This config is server-only; do not mark as client to avoid bundling
+'use client'
+
 /**
  * This configuration is used to for the Sanity Studio that’s mounted on the `/app/studio/[[...tool]]/page.tsx` route
  */
@@ -16,6 +17,8 @@ export default defineConfig({
   basePath: '/studio',
   projectId,
   dataset,
+   name: 'default',
+  title: 'Littles Blog',
   // Add and edit the content schema in the './sanity/schemaTypes' folder
   schema,
   plugins: [
