@@ -21,16 +21,19 @@ async function getPages(): Promise<Page[]> {
 export default async function Navigation() {
   const pages = await getPages()
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-gray-800 shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
+        <Link href="/" className="text-2xl font-bold text-emerald-700">
           My Blog
         </Link>
         <nav>
           <ul className="flex space-x-6">
             {pages.map((page) => (
               <li key={page._id}>
-                <Link href={`/${page.slug.current}`} className="text-gray-600 hover:text-blue-600 transition-colors">
+                <Link
+                  href={`/${page.slug.current}`}
+                  className="text-gray-200 hover:text-emerald-600 text-lg font-semibold transition-colors"
+                >
                   {page.title}
                 </Link>
               </li>
@@ -39,5 +42,5 @@ export default async function Navigation() {
         </nav>
       </div>
     </header>
-  )
+  );
 }

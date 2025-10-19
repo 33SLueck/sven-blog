@@ -19,7 +19,7 @@ const portableTextComponents: PortableTextComponents = {
       return (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={src} alt={value.alt || 'Image'} className="max-w-full h-auto rounded" />
-      )
+      );
     },
     codeBlock: ({ value }: { value: { code: string; language?: string } }) => {
       if (!value?.code) return null

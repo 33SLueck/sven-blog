@@ -26,10 +26,10 @@ export default async function Posts({block}: {block: Posts}) {
                 <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
                 <p className="text-gray-600">{post.excerpt}</p>
               </div>
-            </Link>
+            </Link>          
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
