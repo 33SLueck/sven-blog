@@ -94,7 +94,7 @@ export default function PageRenderer({ components }: { components: PageComponent
             return <Posts key={i} block={block} />
 
           default:
-            return <div key={i}>Unknown block type: {block._type}</div>
+            return <div key={i}>Unknown block type</div>
         }
       })}
     </div>
