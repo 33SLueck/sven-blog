@@ -9,7 +9,7 @@ import FeatureList from './PageComponents/FeatureList'
 import CallToAction from './PageComponents/CallToAction'
 import Gallery from './PageComponents/Gallery'
 import Posts from './PageComponents/Posts'
-import {PageComponent} from '@/types/sanity'
+import type {PageComponent} from '@/types/sanity'
 
 const portableTextComponents: PortableTextComponents = {
   types: {

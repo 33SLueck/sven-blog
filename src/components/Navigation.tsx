@@ -1,6 +1,5 @@
 import {client} from '@/sanity/lib/client'
 import Link from 'next/link'
-import type {Post} from '@/types/sanity'
 
 interface Page {
   _id: string
