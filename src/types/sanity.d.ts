@@ -7,6 +7,11 @@ interface BaseBlock {
   _key: string
 }
 
+// Custom Image type with alt
+export interface GalleryImage extends Image {
+  alt?: string
+}
+
 // Component Types
 export interface HeroSection extends BaseBlock {
   _type: 'heroSection'
@@ -58,7 +63,7 @@ export interface CallToAction extends BaseBlock {
 export interface Gallery extends BaseBlock {
   _type: 'gallery'
   title?: string
-  images?: Image[]
+  images?: GalleryImage[]
 }
 
 export interface Posts extends BaseBlock {

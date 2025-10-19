@@ -6,6 +6,21 @@ export const galleryType = defineType({
   type: 'object',
   fields: [
     defineField({name: 'title', type: 'string'}),
-    defineField({name: 'images', type: 'array', of: [{type: 'image'}]}),
+    defineField({
+      name: 'images',
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Alternative text',
+            },
+          ],
+        },
+      ],
+    }),
   ],
 })

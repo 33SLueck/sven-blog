@@ -45,8 +45,7 @@ const portableTextComponents: PortableTextComponents = {
   },
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function PageRenderer({ components }: { components: any[] }) {
+export default function PageRenderer({ components }: { components: PageComponent[] }) {
   if (!components) return null
 
   return (
@@ -101,4 +100,3 @@ export default function PageRenderer({ components }: { components: any[] }) {
     </div>
   )
 }
- 
