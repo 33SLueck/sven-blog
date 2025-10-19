@@ -32,7 +32,7 @@ export default function PostRenderer({post}: {post: Post}) {
         />
       )}
       <div className="max-w-none">
-        <PortableText value={body} components={portableTextComponents} />
+        {body && <PortableText value={body} components={portableTextComponents} />}
       </div>
     </article>
   )

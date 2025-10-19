@@ -1,4 +1,4 @@
-import {CallToAction} from '@/types/sanity'
+import type {CallToAction} from '@/types/sanity'
 
 export default function CallToAction({block}: {block: CallToAction}) {
   const {title, subtitle, buttonText, buttonLink} = block

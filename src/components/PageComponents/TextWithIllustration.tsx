@@ -1,7 +1,7 @@
 import {urlFor} from '@/sanity/lib/image'
 import Image from 'next/image'
 
-import {TextWithIllustration} from '@/types/sanity'
+import type {TextWithIllustration} from '@/types/sanity'
 
 export default function TextWithIllustration({block}: {block: TextWithIllustration}) {
   const {title, tagline, text, image, imagePosition} = block
@@ -10,7 +10,7 @@ export default function TextWithIllustration({block}: {block: TextWithIllustrati
     <div className="w-full md:w-1/2">
       <Image
         src={urlFor(image).width(800).url()}
-        alt={title}
+        alt={title || 'Illustration'}
         width={800}
         height={600}
         className="rounded-lg"
