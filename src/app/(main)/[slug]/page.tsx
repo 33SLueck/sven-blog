@@ -16,7 +16,12 @@ const query = `*[_type in ["page", "post"] && slug.current == $slug][0]{
   }
 }`
 
-export default async function Page({ params }: { params: { slug: string } }) {
+type Props = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default async function Page({ params }: Props) {
   const data = await client.fetch(query, { slug: params.slug })
   if (!data) return notFound()
 
