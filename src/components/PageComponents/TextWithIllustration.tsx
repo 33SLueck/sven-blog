@@ -22,7 +22,7 @@ export default function TextWithIllustration({block}: {block: TextWithIllustrati
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div
-          className={`flex flex-wrap items-center ${imagePosition === 'right' ? 'flex-row-reverse' : ''}`}>
+          className={`flex flex-wrap items-center ${imagePosition === 'left' ? 'flex-row-reverse' : ''}`}>
           <div className="w-full md:w-1/2 p-8">
             <h2 className="text-3xl font-bold mb-2">{title}</h2>
             {tagline && <p className="text-lg text-gray-600 mb-4">{tagline}</p>}
