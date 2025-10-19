@@ -1,5 +1,5 @@
 import type {Image, Slug} from 'sanity'
-import type {TypedObject} from '@portabletext/types'
+import type {PortableTextBlock} from '@portabletext/types'
 
 // Base types
 interface BaseBlock {
@@ -73,7 +73,7 @@ export interface Posts extends BaseBlock {
 
 export interface BlockContent extends BaseBlock {
   _type: 'blockContent'
-  body: TypedObject[]
+  body: PortableTextBlock[]
 }
 
 // Page Component Union Type
@@ -93,6 +93,6 @@ export interface Post {
     title?: string
   }[]
   publishedAt?: string
-  body?: TypedObject[]
+  body?: PortableTextBlock[]
   excerpt?: string
 }
