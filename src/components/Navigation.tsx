@@ -10,7 +10,7 @@ interface Page {
 }
 
 async function getPages(): Promise<Page[]> {
-  const pages = await client.fetch(`*[_type == "page" && !(_id in path("drafts.**"))]{
+  const pages = await client.fetch(`*[_type == "page" && slug.current != "home" && !(_id in path("drafts.**"))]{
     _id,
     title,
     slug,
