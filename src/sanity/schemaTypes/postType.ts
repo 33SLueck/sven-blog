@@ -12,6 +12,12 @@ export const postType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'excerpt',
+      title: 'Excerpt',
+      type: 'text',
+      rows: 4,
+    }),
+    defineField({
       name: 'slug',
       type: 'slug',
       options: {

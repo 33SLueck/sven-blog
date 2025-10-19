@@ -17,6 +17,9 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "sanity": "^4.10.3",
+  "@portabletext/react": "^3.2.4",
+  "@portabletext/types": "^2.0.15",
+  "react-syntax-highlighter": "^15.5.0",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {
